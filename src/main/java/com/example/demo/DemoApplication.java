@@ -138,9 +138,9 @@ class UsersApp
         BufferedReader Br = new BufferedReader(new FileReader("Users.txt"));
         String line = Br.readLine();
         while (line != null) {
-            String line_without_morethanonespace=line.replaceAll(" +"," ");
+            String line_without_morethanonespac=line.replaceAll(" +"," ");
 
-            String[] parts = line_without_morethanonespace.split(" ");
+            String[] parts = line_without_morethanonespac.split(" ");
             String username = parts[0];
             String password = parts[1];
             try {
