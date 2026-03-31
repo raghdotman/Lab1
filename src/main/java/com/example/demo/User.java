@@ -110,9 +110,13 @@ class User
             {
                 hadletter=true;
             }
-            else
+            else if(a=='!'||a=='@'||a=='#'||a=='$'||a=='%'||a=='^'||a=='&'||a=='*'||a=='('||a==')')
             {
                 hadsign=true;
+            }
+            else
+            {
+                throw new InvalidUserException("Please enter a valid password");
             }
 
         }
